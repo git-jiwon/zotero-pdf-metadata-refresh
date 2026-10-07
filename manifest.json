@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "PDF Metadata Refresh",
+  "version": "1.0.0",
+  "description": "Re-recognize existing Zotero items from their attached PDFs",
+  "author": "git-jiwon",
+  "icons": {
+    "48": "icons/icon.png",
+    "96": "icons/icon@2x.png"
+  },
+  "applications": {
+    "zotero": {
+      "id": "pdf-metadata-refresh@zotero.org",
+      "update_url": "https://raw.githubusercontent.com/git-jiwon/zotero-pdf-metadata-refresh/main/updates.json",
+      "strict_min_version": "10.0.1",
+      "strict_max_version": "10.0.*"
+    }
+  }
+}

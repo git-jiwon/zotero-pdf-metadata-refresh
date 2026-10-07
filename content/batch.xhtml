@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 이 창의 HTML 요소에 단 title은 XUL 창이 툴팁 리스너를 달아 주지 않으면 뜨지 않는다.
+     Zotero 주 창(zoteroPane.xhtml)과 같은 방식으로, 창에 tooltip을 지정하고 page="true"인
+     tooltip이 마우스 아래 요소의 title을 읽어 띄우게 한다. -->
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="PDF Metadata Refresh" width="1280" height="850" orient="vertical" resizable="true" persist="screenX screenY width height sizemode" tooltip="html-tooltip">
+  <tooltip id="html-tooltip" page="true"/>
+  <html:div xmlns:html="http://www.w3.org/1999/xhtml" id="batch-root" style="flex:1;min-height:0">Opening PDF Metadata Refresh…</html:div>
+</window>

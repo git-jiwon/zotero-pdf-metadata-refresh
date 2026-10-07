@@ -1,0 +1,37 @@
+name: Public source checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: checks-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm audit --audit-level=moderate
+      - run: npm run typecheck
+      - run: npm run test:public
+      - run: npm run release:check -- --development
+      - run: npm run build
+      - name: Require release configuration for version tags
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: npm run release:check -- --skip-artifact-hash
+      - name: Build the versioned release package
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: npm run build:release
+      - name: Verify the release package checksum
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: npm run release:check

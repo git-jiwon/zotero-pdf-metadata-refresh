@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <title>PDF Metadata Refresh</title>
+  <desc>A folded document with metadata lines and a circular refresh arrow.</desc>
+  <path d="M15 5h20l13 13v36a4 4 0 0 1-4 4H15a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4Z" fill="#176e68" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M35 6v9a3 3 0 0 0 3 3h9" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M19 26h17M19 34h10" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="44" cy="46" r="15.5" fill="#fff" stroke="#176e68" stroke-width="2"/>
+  <path d="M51 49.5a7.5 7.5 0 1 1-.5-7.5" stroke="#176e68" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="m46 43 5.7 1.2.1-5.8" stroke="#176e68" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

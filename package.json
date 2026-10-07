@@ -1,0 +1,27 @@
+{
+  "name": "zotero-pdf-metadata-refresh",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "author": "git-jiwon",
+  "homepage": "https://github.com/git-jiwon/zotero-pdf-metadata-refresh",
+  "repository": { "type": "git", "url": "https://github.com/git-jiwon/zotero-pdf-metadata-refresh" },
+  "bugs": { "url": "https://github.com/git-jiwon/zotero-pdf-metadata-refresh/issues" },
+  "description": "Review and refresh Zotero PDF metadata using native recognition, identifier and catalogue lookup, and local LM Studio vision",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/*.test.mjs",
+    "verify": "node scripts/verify.mjs",
+    "test:public": "node --test test/release-security.test.mjs test/release-ui.test.mjs test/i18n.test.mjs test/selected-export.test.mjs test/external-url.test.mjs test/public-url.test.mjs test/addon-shutdown.test.mjs test/bootstrap-shutdown.test.mjs test/synthetic-policy.test.mjs",
+    "build:release": "node scripts/build.mjs --release",
+    "release:check": "node scripts/release-check.mjs",
+    "release:source": "node scripts/release-source.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "archiver": "^7.0.1",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.7.0"
+  }
+}
