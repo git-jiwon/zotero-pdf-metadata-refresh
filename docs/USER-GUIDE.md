@@ -1,4 +1,4 @@
-# Using PDF Metadata Refresh 1.0.0
+# Using PDF Metadata Refresh 1.0.1
 
 ## Find, review, apply
 

@@ -1,4 +1,4 @@
-# Data and privacy — version 1.0.0
+# Data and privacy — version 1.0.1
 
 The repository's screenshots show a fictional demo library. Document titles, authors, dates, catalogue records, item keys and example identifiers were written for the demonstration. No screenshot was taken from a personal Zotero library. Image assets omit personal paths, account names, browser tabs and embedded image metadata.
 

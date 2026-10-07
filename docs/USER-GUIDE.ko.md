@@ -1,4 +1,4 @@
-# PDF Metadata Refresh 1.0.0 사용 안내
+# PDF Metadata Refresh 1.0.1 사용 안내
 
 ## 정보 찾기 → 변경 내용 확인 → 적용
 

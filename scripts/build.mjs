@@ -1,5 +1,5 @@
 import { build } from "esbuild";
-import archiver from "archiver";
+import { ZipArchive } from "archiver";
 import fs from "node:fs";
 import path from "node:path";
 import { archiveFiles, assertSafePath, manifestProblems, ICON_PNG_SIZES, publicFileFindings } from './release-files.mjs';
@@ -55,7 +55,7 @@ fs.copyFileSync(path.join(root, 'content', 'batch.xhtml'), path.join(dist, 'cont
 for (const name of Object.keys(ICON_PNG_SIZES)) fs.copyFileSync(path.join(root, name), path.join(dist, name));
 
 const output = fs.createWriteStream(path.join(root, "pdf-metadata-refresh.xpi"));
-const zip = archiver("zip", { zlib: { level: 9 } });
+const zip = new ZipArchive({ zlib: { level: 9 } });
 const completed = new Promise((resolve, reject) => {
   output.on('close', resolve).on('error', reject);
   zip.on('error', reject).on('warning', reject);

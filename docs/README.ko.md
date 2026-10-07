@@ -1,10 +1,10 @@
 # <img src="../icons/icon.png" width="32" height="32" alt=""> PDF Metadata Refresh
 
-[English](../README.md) · [v1.0.0 다운로드](https://github.com/git-jiwon/zotero-pdf-metadata-refresh/releases/tag/v1.0.0) · [사용 안내](USER-GUIDE.ko.md)
+[English](../README.md) · [v1.0.1 다운로드](https://github.com/git-jiwon/zotero-pdf-metadata-refresh/releases/tag/v1.0.1) · [사용 안내](USER-GUIDE.ko.md)
 
 Zotero에 이미 들어 있는 PDF의 제목·저자·발행 정보를 다시 찾아 **기존 정보와 비교한 뒤 선택해서 적용**하는 플러그인입니다. PDF 첨부파일, 노트와 주석의 연결을 유지하면서 항목별·필드별 변경안을 검토할 수 있습니다.
 
-이 저장소는 첫 공개 버전 **1.0.0**의 소스와 안내만 담습니다. 스크린샷의 문서 제목·저자·서지정보는 모두 가상 예시이며 개인 라이브러리 자료를 사용하지 않았습니다.
+현재 버전은 **1.0.1**입니다. 이 저장소에는 공개 소스와 사용 안내, 릴리스 기록이 들어 있습니다. 스크린샷의 문서 제목·저자·서지정보는 모두 가상 예시이며 개인 라이브러리 자료를 사용하지 않았습니다.
 
 ![가상 문서로 구성한 결과 목록](images/demo-ko-list.jpg)
 
@@ -20,7 +20,7 @@ Zotero에 이미 들어 있는 PDF의 제목·저자·발행 정보를 다시 �
 
 ## 설치
 
-1. [Releases](https://github.com/git-jiwon/zotero-pdf-metadata-refresh/releases/tag/v1.0.0)에서 `pdf-metadata-refresh-1.0.0.xpi`를 내려받습니다.
+1. [Releases](https://github.com/git-jiwon/zotero-pdf-metadata-refresh/releases/tag/v1.0.1)에서 `pdf-metadata-refresh-1.0.1.xpi`를 내려받습니다.
 2. Zotero의 **도구 → 플러그인**을 열고 XPI 파일을 플러그인 창에 끌어 놓거나 파일에서 설치합니다.
 3. PDF가 첨부된 항목을 선택하고 오른쪽 클릭 메뉴의 **PDF에서 제목·저자 정보 찾기…**를 누릅니다.
 
@@ -75,4 +75,4 @@ npm run release:check
 
 공개 저장소에는 개인 PDF, Zotero 데이터베이스, 과거 개발 로그나 이전 XPI를 포함하지 않습니다. 공개 테스트는 가상 자료로 정책과 UI를 확인하며 인식 정확도 수치를 제공하지 않습니다.
 
-[라이선스](../LICENSE) · [1.0.0 릴리스 안내](RELEASE-NOTES-1.0.0.md)
+[라이선스](../LICENSE) · [1.0.1 릴리스 안내](RELEASE-NOTES-1.0.1.md)

@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "PDF Metadata Refresh",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Re-recognize existing Zotero items from their attached PDFs",
   "author": "git-jiwon",
   "icons": {

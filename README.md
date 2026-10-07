@@ -2,7 +2,7 @@
 
 Review and refresh the metadata of PDFs already in your Zotero library. Compare proposed changes field by field, check how information was found, and apply the fields you choose while keeping attachments, notes and annotations connected.
 
-[한국어](docs/README.ko.md) · [User guide](docs/USER-GUIDE.md) · [Privacy](docs/PRIVACY.md) · [Version 1.0.0](docs/RELEASE-NOTES-1.0.0.md)
+[한국어](docs/README.ko.md) · [User guide](docs/USER-GUIDE.md) · [Privacy](docs/PRIVACY.md) · [Version 1.0.1](docs/RELEASE-NOTES-1.0.1.md)
 
 ![The item list with colour-coded evidence and fictional documents](docs/images/demo-en-list.jpg)
 
@@ -10,11 +10,11 @@ Every document, author and identifier in these screenshots is fictional. The scr
 
 ## Install
 
-1. Download **pdf-metadata-refresh-1.0.0.xpi** from [Releases](https://github.com/git-jiwon/zotero-pdf-metadata-refresh/releases).
+1. Download **pdf-metadata-refresh-1.0.1.xpi** from [Releases](https://github.com/git-jiwon/zotero-pdf-metadata-refresh/releases).
 2. In Zotero, open **Tools → Plugins** and drag the XPI into the plugin window, or choose **Install Plugin From File** from its menu.
 3. Select items with PDF attachments in your library. Right-click and choose **Find title and author metadata from PDFs…**.
 
-Version 1.0.0 declares compatibility with **Zotero 10.0.1–10.0.x**. PDF page rendering for LM Studio image reading currently requires Windows. The interface uses Korean when Zotero's language is Korean and English for other languages. Your document titles and metadata stay in their original language.
+Version 1.0.1 declares compatibility with **Zotero 10.0.1–10.0.x**. PDF page rendering for LM Studio image reading currently requires Windows. The interface uses Korean when Zotero's language is Korean and English for other languages. Your document titles and metadata stay in their original language.
 
 See [Zotero's plugin installation instructions](https://www.zotero.org/support/plugins).
 
@@ -53,7 +53,7 @@ Zotero recognition and external lookups can send extracted text, identifiers, ti
 
 ## Build and contribute
 
-Use **Node.js 24**. This public repository contains only the reviewed first-release source, synthetic public tests and fictional screenshots.
+Use **Node.js 24**. This public repository contains only the reviewed release source, synthetic public tests and fictional screenshots.
 
 ```sh
 npm ci --ignore-scripts

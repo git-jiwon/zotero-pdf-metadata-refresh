@@ -30,7 +30,7 @@ The local data is stored as ordinary files with the operating system's permissio
 
 ## Build and repository boundaries
 
-Only explicitly reviewed files are permitted in the public source export. The public repository contains version 1.0.0 source, synthetic tests and screenshots of fictional documents. Historical development notes, real library test fixtures, PDFs, databases, audit folders, temporary files, previous XPIs and dependencies are excluded. Public JPEGs are checked for embedded metadata and thumbnails.
+Only explicitly reviewed files are permitted in the public source export. The public repository contains reviewed release source, release notes, synthetic tests and screenshots of fictional documents. Historical development notes, real library test fixtures, PDFs, databases, audit folders, temporary files, previous XPIs and dependencies are excluded. Public JPEGs are checked for embedded metadata and thumbnails.
 
 The release checker scans known token formats, private keys, local account paths and credentials in URLs. It prints file/line/type instead of any matching value. This is a bounded preflight check; it does not prove the absence of secrets. Enable GitHub push protection and examine the exported tree before committing. GitHub's [secret scanning documentation](https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning) explains repository history coverage and credential revocation.
 

@@ -4,7 +4,7 @@ import { inflateSync } from 'node:zlib';
 
 export const PUBLIC_DOCUMENT_FILES = [
   'docs/README.ko.md', 'docs/USER-GUIDE.md', 'docs/USER-GUIDE.ko.md',
-  'docs/RELEASE-NOTES-1.0.0.md', 'docs/GITHUB-PUBLISHING.md', 'docs/PRIVACY.md'
+  'docs/RELEASE-NOTES-1.0.0.md', 'docs/RELEASE-NOTES-1.0.1.md', 'docs/GITHUB-PUBLISHING.md', 'docs/PRIVACY.md'
 ];
 export const PUBLIC_IMAGE_FILES = ['en', 'ko'].flatMap(language =>
   ['list', 'detail', 'settings'].map(view => `docs/images/demo-${language}-${view}.jpg`));
@@ -275,7 +275,7 @@ export function manifestProblems(manifest, pkg, { release = false } = {}) {
   return problems;
 }
 
-/** A first public release offers only this add-on, version, artifact and tested range. */
+/** A public update offers only this add-on, current version, artifact and tested range. */
 export function updatesProblems(updates, manifest, pkg, { artifactHash } = {}) {
   const problems = [];
   const object = value => !!value && typeof value === 'object' && !Array.isArray(value);
