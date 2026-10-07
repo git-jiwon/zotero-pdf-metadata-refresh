@@ -1,0 +1,19 @@
+{
+  "addons": {
+    "pdf-metadata-refresh@zotero.org": {
+      "updates": [
+        {
+          "applications": {
+            "zotero": {
+              "strict_min_version": "10.0.1",
+              "strict_max_version": "10.0.*"
+            }
+          },
+          "update_link": "https://github.com/git-jiwon/zotero-pdf-metadata-refresh/releases/download/v1.0.0/pdf-metadata-refresh-1.0.0.xpi",
+          "update_hash": "sha256:676914ca3db3e02df7b829a88887b8d6b3ed5f7b3690354c16e5fcd91c4c281c",
+          "version": "1.0.0"
+        }
+      ]
+    }
+  }
+}
