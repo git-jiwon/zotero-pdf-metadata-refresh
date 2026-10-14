@@ -19,7 +19,7 @@
     "release:source": "node scripts/release-source.mjs"
   },
   "devDependencies": {
-    "@types/node": "^26.6.4",
+    "@types/node": "^26.6.5",
     "@typescript/typescript6": "^6.0.2",
     "archiver": "^8.0.0",
     "esbuild": "^0.28.2",
